@@ -9,25 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var score = 0
-    var counter:Int=0
-    var timer = Timer()
-    var kennyArray = [UIImageView]()
-    var hideTimer = Timer()
-    var highScore = 0
+    private var score = 0
+    private var counter:Int=0
+    private var timer = Timer()
+    private var kennyArray = [UIImageView]()
+    private var hideTimer = Timer()
+    private var highScore = 0
     
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var highScoreLabel: UILabel!
-    @IBOutlet weak var kenny1: UIImageView!
-    @IBOutlet weak var kenny2: UIImageView!
-    @IBOutlet weak var kenny3: UIImageView!
-    @IBOutlet weak var kenny4: UIImageView!
-    @IBOutlet weak var kenny5: UIImageView!
-    @IBOutlet weak var kenny6: UIImageView!
-    @IBOutlet weak var kenny7: UIImageView!
-    @IBOutlet weak var kenny8: UIImageView!
-    @IBOutlet weak var kenny9: UIImageView!
+    @IBOutlet private weak var timeLabel: UILabel!
+    @IBOutlet private weak var scoreLabel: UILabel!
+    @IBOutlet private weak var highScoreLabel: UILabel!
+    @IBOutlet private weak var kenny1: UIImageView!
+    @IBOutlet private weak var kenny2: UIImageView!
+    @IBOutlet private weak var kenny3: UIImageView!
+    @IBOutlet private weak var kenny4: UIImageView!
+    @IBOutlet private weak var kenny5: UIImageView!
+    @IBOutlet private weak var kenny6: UIImageView!
+    @IBOutlet private weak var kenny7: UIImageView!
+    @IBOutlet private weak var kenny8: UIImageView!
+    @IBOutlet private weak var kenny9: UIImageView!
     
     
     
@@ -50,18 +50,6 @@ class ViewController: UIViewController {
             highScore = newScore
             highScoreLabel.text = "Highscore: \(highScore)"
         }
-        
-        
-        
-        kenny1.isUserInteractionEnabled = true
-        kenny2.isUserInteractionEnabled = true
-        kenny3.isUserInteractionEnabled = true
-        kenny4.isUserInteractionEnabled = true
-        kenny5.isUserInteractionEnabled = true
-        kenny6.isUserInteractionEnabled = true
-        kenny7.isUserInteractionEnabled = true
-        kenny8.isUserInteractionEnabled = true
-        kenny9.isUserInteractionEnabled = true
         
         let recognizer1 = UITapGestureRecognizer(target: self, action: #selector(increaseScore))
         let recognizer2 = UITapGestureRecognizer(target: self, action: #selector(increaseScore))
