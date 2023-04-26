@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     private var score = 0
-    private var counter:Int=0
+    private var counter:Int=10
     private var timer = Timer()
     private var kennyArray = [UIImageView]()
     private var hideTimer = Timer()
@@ -28,9 +28,6 @@ class ViewController: UIViewController {
     @IBOutlet private weak var kenny7: UIImageView!
     @IBOutlet private weak var kenny8: UIImageView!
     @IBOutlet private weak var kenny9: UIImageView!
-    
-    
-    
     
     
     override func viewDidLoad() {
@@ -72,22 +69,20 @@ class ViewController: UIViewController {
         kenny8.addGestureRecognizer(recognizer8)
         kenny9.addGestureRecognizer(recognizer9)
         
-        kennyArray = [kenny1, kenny2, kenny3, kenny4, kenny5, kenny6, kenny7, kenny8, kenny9]
-        
+        updateKennyArray()
         
         //Timers
-        
-        counter = 10
         timeLabel.text = String(counter)
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats:true)
         hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(hideKenny), userInfo: nil, repeats: true)
-       
-        
+              
         hideKenny()
-        
-        
-        
+    }
+    
+    private func updateKennyArray() {
+        kennyArray.removeAll()
+        kennyArray = [kenny1, kenny2, kenny3, kenny4, kenny5, kenny6, kenny7, kenny8, kenny9]
     }
         
    @objc func hideKenny() {
@@ -122,7 +117,6 @@ class ViewController: UIViewController {
             
             for kenny in kennyArray {
                 kenny.isHidden = true
-                
             }
             
             //HighScore
@@ -132,10 +126,6 @@ class ViewController: UIViewController {
                 highScoreLabel.text = " HighScore:\(self.highScore)"
                 UserDefaults.standard.set(self.highScore, forKey: "highscore")
             }
-            
-            
-            
-            
             
           //Alert
             let alert = UIAlertController(title: "Time's Up", message: "Do you want to play again?", preferredStyle: UIAlertController.Style.alert)
