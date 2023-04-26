@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TheKennyGame
 //
-//  Created by Recep Sarıkoç on 26.04.2023.
+//  Created by Recep Sarıkoç on 27.03.2023.
 //
 
 import UIKit

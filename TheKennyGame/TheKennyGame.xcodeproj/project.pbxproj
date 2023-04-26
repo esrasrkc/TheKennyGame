@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B76878FC29F9715200C316FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76878FB29F9715200C316FD /* AppDelegate.swift */; };
-		B76878FE29F9715200C316FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76878FD29F9715200C316FD /* SceneDelegate.swift */; };
-		B768790029F9715200C316FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76878FF29F9715200C316FD /* ViewController.swift */; };
-		B768790329F9715200C316FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B768790129F9715200C316FD /* Main.storyboard */; };
-		B768790529F9715400C316FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B768790429F9715400C316FD /* Assets.xcassets */; };
-		B768790829F9715400C316FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B768790629F9715400C316FD /* LaunchScreen.storyboard */; };
+		B7A63EE229D17DB7002AA26D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A63EE129D17DB7002AA26D /* AppDelegate.swift */; };
+		B7A63EE429D17DB7002AA26D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A63EE329D17DB7002AA26D /* SceneDelegate.swift */; };
+		B7A63EE629D17DB7002AA26D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A63EE529D17DB7002AA26D /* ViewController.swift */; };
+		B7A63EE929D17DB7002AA26D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A63EE729D17DB7002AA26D /* Main.storyboard */; };
+		B7A63EEB29D17DB8002AA26D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A63EEA29D17DB8002AA26D /* Assets.xcassets */; };
+		B7A63EEE29D17DB8002AA26D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A63EEC29D17DB8002AA26D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B76878F829F9715200C316FD /* TheKennyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheKennyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B76878FB29F9715200C316FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B76878FD29F9715200C316FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B76878FF29F9715200C316FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B768790229F9715200C316FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B768790429F9715400C316FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B768790729F9715400C316FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B768790929F9715400C316FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7A63EDE29D17DB7002AA26D /* TheKennyGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheKennyGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7A63EE129D17DB7002AA26D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7A63EE329D17DB7002AA26D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7A63EE529D17DB7002AA26D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B7A63EE829D17DB7002AA26D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7A63EEA29D17DB8002AA26D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7A63EED29D17DB8002AA26D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7A63EEF29D17DB8002AA26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B76878F529F9715200C316FD /* Frameworks */ = {
+		B7A63EDB29D17DB7002AA26D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,32 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B76878EF29F9715200C316FD = {
+		B7A63ED529D17DB7002AA26D = {
 			isa = PBXGroup;
 			children = (
-				B76878FA29F9715200C316FD /* TheKennyGame */,
-				B76878F929F9715200C316FD /* Products */,
+				B7A63EE029D17DB7002AA26D /* TheKennyGame */,
+				B7A63EDF29D17DB7002AA26D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B76878F929F9715200C316FD /* Products */ = {
+		B7A63EDF29D17DB7002AA26D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B76878F829F9715200C316FD /* TheKennyGame.app */,
+				B7A63EDE29D17DB7002AA26D /* TheKennyGame.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B76878FA29F9715200C316FD /* TheKennyGame */ = {
+		B7A63EE029D17DB7002AA26D /* TheKennyGame */ = {
 			isa = PBXGroup;
 			children = (
-				B76878FB29F9715200C316FD /* AppDelegate.swift */,
-				B76878FD29F9715200C316FD /* SceneDelegate.swift */,
-				B76878FF29F9715200C316FD /* ViewController.swift */,
-				B768790129F9715200C316FD /* Main.storyboard */,
-				B768790429F9715400C316FD /* Assets.xcassets */,
-				B768790629F9715400C316FD /* LaunchScreen.storyboard */,
-				B768790929F9715400C316FD /* Info.plist */,
+				B7A63EE129D17DB7002AA26D /* AppDelegate.swift */,
+				B7A63EE329D17DB7002AA26D /* SceneDelegate.swift */,
+				B7A63EE529D17DB7002AA26D /* ViewController.swift */,
+				B7A63EE729D17DB7002AA26D /* Main.storyboard */,
+				B7A63EEA29D17DB8002AA26D /* Assets.xcassets */,
+				B7A63EEC29D17DB8002AA26D /* LaunchScreen.storyboard */,
+				B7A63EEF29D17DB8002AA26D /* Info.plist */,
 			);
 			path = TheKennyGame;
 			sourceTree = "<group>";
@@ -70,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B76878F729F9715200C316FD /* TheKennyGame */ = {
+		B7A63EDD29D17DB7002AA26D /* TheKennyGame */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B768790C29F9715400C316FD /* Build configuration list for PBXNativeTarget "TheKennyGame" */;
+			buildConfigurationList = B7A63EF229D17DB8002AA26D /* Build configuration list for PBXNativeTarget "TheKennyGame" */;
 			buildPhases = (
-				B76878F429F9715200C316FD /* Sources */,
-				B76878F529F9715200C316FD /* Frameworks */,
-				B76878F629F9715200C316FD /* Resources */,
+				B7A63EDA29D17DB7002AA26D /* Sources */,
+				B7A63EDB29D17DB7002AA26D /* Frameworks */,
+				B7A63EDC29D17DB7002AA26D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,25 +84,25 @@
 			);
 			name = TheKennyGame;
 			productName = TheKennyGame;
-			productReference = B76878F829F9715200C316FD /* TheKennyGame.app */;
+			productReference = B7A63EDE29D17DB7002AA26D /* TheKennyGame.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B76878F029F9715200C316FD /* Project object */ = {
+		B7A63ED629D17DB7002AA26D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
-					B76878F729F9715200C316FD = {
+					B7A63EDD29D17DB7002AA26D = {
 						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
-			buildConfigurationList = B76878F329F9715200C316FD /* Build configuration list for PBXProject "TheKennyGame" */;
+			buildConfigurationList = B7A63ED929D17DB7002AA26D /* Build configuration list for PBXProject "TheKennyGame" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = B76878EF29F9715200C316FD;
-			productRefGroup = B76878F929F9715200C316FD /* Products */;
+			mainGroup = B7A63ED529D17DB7002AA26D;
+			productRefGroup = B7A63EDF29D17DB7002AA26D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B76878F729F9715200C316FD /* TheKennyGame */,
+				B7A63EDD29D17DB7002AA26D /* TheKennyGame */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B76878F629F9715200C316FD /* Resources */ = {
+		B7A63EDC29D17DB7002AA26D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B768790829F9715400C316FD /* LaunchScreen.storyboard in Resources */,
-				B768790529F9715400C316FD /* Assets.xcassets in Resources */,
-				B768790329F9715200C316FD /* Main.storyboard in Resources */,
+				B7A63EEE29D17DB8002AA26D /* LaunchScreen.storyboard in Resources */,
+				B7A63EEB29D17DB8002AA26D /* Assets.xcassets in Resources */,
+				B7A63EE929D17DB7002AA26D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B76878F429F9715200C316FD /* Sources */ = {
+		B7A63EDA29D17DB7002AA26D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B768790029F9715200C316FD /* ViewController.swift in Sources */,
-				B76878FC29F9715200C316FD /* AppDelegate.swift in Sources */,
-				B76878FE29F9715200C316FD /* SceneDelegate.swift in Sources */,
+				B7A63EE629D17DB7002AA26D /* ViewController.swift in Sources */,
+				B7A63EE229D17DB7002AA26D /* AppDelegate.swift in Sources */,
+				B7A63EE429D17DB7002AA26D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B768790129F9715200C316FD /* Main.storyboard */ = {
+		B7A63EE729D17DB7002AA26D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B768790229F9715200C316FD /* Base */,
+				B7A63EE829D17DB7002AA26D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B768790629F9715400C316FD /* LaunchScreen.storyboard */ = {
+		B7A63EEC29D17DB8002AA26D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B768790729F9715400C316FD /* Base */,
+				B7A63EED29D17DB8002AA26D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B768790A29F9715400C316FD /* Debug */ = {
+		B7A63EF029D17DB8002AA26D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -226,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		B768790B29F9715400C316FD /* Release */ = {
+		B7A63EF129D17DB8002AA26D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -280,7 +280,7 @@
 			};
 			name = Release;
 		};
-		B768790D29F9715400C316FD /* Debug */ = {
+		B7A63EF329D17DB8002AA26D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -295,6 +295,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +309,7 @@
 			};
 			name = Debug;
 		};
-		B768790E29F9715400C316FD /* Release */ = {
+		B7A63EF429D17DB8002AA26D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,6 +324,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B76878F329F9715200C316FD /* Build configuration list for PBXProject "TheKennyGame" */ = {
+		B7A63ED929D17DB7002AA26D /* Build configuration list for PBXProject "TheKennyGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B768790A29F9715400C316FD /* Debug */,
-				B768790B29F9715400C316FD /* Release */,
+				B7A63EF029D17DB8002AA26D /* Debug */,
+				B7A63EF129D17DB8002AA26D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B768790C29F9715400C316FD /* Build configuration list for PBXNativeTarget "TheKennyGame" */ = {
+		B7A63EF229D17DB8002AA26D /* Build configuration list for PBXNativeTarget "TheKennyGame" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B768790D29F9715400C316FD /* Debug */,
-				B768790E29F9715400C316FD /* Release */,
+				B7A63EF329D17DB8002AA26D /* Debug */,
+				B7A63EF429D17DB8002AA26D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B76878F029F9715200C316FD /* Project object */;
+	rootObject = B7A63ED629D17DB7002AA26D /* Project object */;
 }
