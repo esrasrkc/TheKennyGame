@@ -37,17 +37,38 @@ class ViewController: UIViewController {
         
         //Highscore check
         
+        
+        updateHighScore()
+        addRecognizer()
+        updateKennyArray()
+        
+        //Timers
+        timeLabel.text = String(counter)
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats:true)
+        hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(hideKenny), userInfo: nil, repeats: true)
+        
+        hideKenny()
+    }
+    
+    private func updateKennyArray() {
+        kennyArray.removeAll()
+        kennyArray = [kenny1, kenny2, kenny3, kenny4, kenny5, kenny6, kenny7, kenny8, kenny9]
+    }
+        
+    private func updateHighScore() {
         let storedHighScore = UserDefaults.standard.object(forKey: "highscore")
         if storedHighScore == nil {
             highScore = 0
-            highScoreLabel.text = "Highscore :\(highScore)"
         }
         
-        if let newScore = storedHighScore as? Int{
+        if let newScore = storedHighScore as? Int {
             highScore = newScore
-            highScoreLabel.text = "Highscore: \(highScore)"
         }
-        
+        highScoreLabel.text = "Highscore :\(highScore)"
+    }
+    
+    private func addRecognizer() {
         let recognizer1 = UITapGestureRecognizer(target: self, action: #selector(increaseScore))
         let recognizer2 = UITapGestureRecognizer(target: self, action: #selector(increaseScore))
         let recognizer3 = UITapGestureRecognizer(target: self, action: #selector(increaseScore))
@@ -68,41 +89,24 @@ class ViewController: UIViewController {
         kenny7.addGestureRecognizer(recognizer7)
         kenny8.addGestureRecognizer(recognizer8)
         kenny9.addGestureRecognizer(recognizer9)
-        
-        updateKennyArray()
-        
-        //Timers
-        timeLabel.text = String(counter)
-        
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats:true)
-        hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(hideKenny), userInfo: nil, repeats: true)
-              
-        hideKenny()
     }
     
-    private func updateKennyArray() {
-        kennyArray.removeAll()
-        kennyArray = [kenny1, kenny2, kenny3, kenny4, kenny5, kenny6, kenny7, kenny8, kenny9]
-    }
-        
-   @objc func hideKenny() {
+    @objc func hideKenny() {
         
         for kenny in kennyArray {
             kenny.isHidden = true
             
         }
         
-       let random = Int(arc4random_uniform(UInt32(kennyArray.count - 1)))
+        let random = Int(arc4random_uniform(UInt32(kennyArray.count - 1)))
         kennyArray[random].isHidden = false
         
     }
     
     
     @objc func increaseScore() {
-        
         score += 1
         scoreLabel.text = "Score: \(score)"
-        
     }
     
     @objc func countDown() {
@@ -122,12 +126,12 @@ class ViewController: UIViewController {
             //HighScore
             
             if self.score > self.highScore {
-                self.highScore = self.score
+                highScore = self.score
                 highScoreLabel.text = " HighScore:\(self.highScore)"
                 UserDefaults.standard.set(self.highScore, forKey: "highscore")
             }
             
-          //Alert
+            //Alert
             let alert = UIAlertController(title: "Time's Up", message: "Do you want to play again?", preferredStyle: UIAlertController.Style.alert)
             let okButton = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
             
@@ -142,10 +146,10 @@ class ViewController: UIViewController {
                 
                 self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.countDown), userInfo: nil, repeats:true)
                 self.hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.hideKenny), userInfo: nil, repeats: true)
-               
                 
                 
-        }
+                
+            }
             
             alert.addAction(okButton)
             alert.addAction(replayButton)
@@ -154,9 +158,9 @@ class ViewController: UIViewController {
             
             
         }
-        }
-        
     }
+    
+}
 
 
 
