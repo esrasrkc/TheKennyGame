@@ -9,28 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var score = 0
-    var counter:Int=0
-    var timer = Timer()
-    var kennyArray = [UIImageView]()
-    var hideTimer = Timer()
-    var highScore = 0
+    private var score = 0
+    private var counter:Int=10
+    private var timer = Timer()
+    private var kennyArray = [UIImageView]()
+    private var hideTimer = Timer()
+    private var highScore = 0
     
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet weak var highScoreLabel: UILabel!
-    @IBOutlet weak var kenny1: UIImageView!
-    @IBOutlet weak var kenny2: UIImageView!
-    @IBOutlet weak var kenny3: UIImageView!
-    @IBOutlet weak var kenny4: UIImageView!
-    @IBOutlet weak var kenny5: UIImageView!
-    @IBOutlet weak var kenny6: UIImageView!
-    @IBOutlet weak var kenny7: UIImageView!
-    @IBOutlet weak var kenny8: UIImageView!
-    @IBOutlet weak var kenny9: UIImageView!
-    
-    
-    
+    @IBOutlet private weak var timeLabel: UILabel!
+    @IBOutlet private weak var scoreLabel: UILabel!
+    @IBOutlet private weak var highScoreLabel: UILabel!
+    @IBOutlet private weak var kenny1: UIImageView!
+    @IBOutlet private weak var kenny2: UIImageView!
+    @IBOutlet private weak var kenny3: UIImageView!
+    @IBOutlet private weak var kenny4: UIImageView!
+    @IBOutlet private weak var kenny5: UIImageView!
+    @IBOutlet private weak var kenny6: UIImageView!
+    @IBOutlet private weak var kenny7: UIImageView!
+    @IBOutlet private weak var kenny8: UIImageView!
+    @IBOutlet private weak var kenny9: UIImageView!
     
     
     override func viewDidLoad() {
@@ -50,18 +47,6 @@ class ViewController: UIViewController {
             highScore = newScore
             highScoreLabel.text = "Highscore: \(highScore)"
         }
-        
-        
-        
-        kenny1.isUserInteractionEnabled = true
-        kenny2.isUserInteractionEnabled = true
-        kenny3.isUserInteractionEnabled = true
-        kenny4.isUserInteractionEnabled = true
-        kenny5.isUserInteractionEnabled = true
-        kenny6.isUserInteractionEnabled = true
-        kenny7.isUserInteractionEnabled = true
-        kenny8.isUserInteractionEnabled = true
-        kenny9.isUserInteractionEnabled = true
         
         let recognizer1 = UITapGestureRecognizer(target: self, action: #selector(increaseScore))
         let recognizer2 = UITapGestureRecognizer(target: self, action: #selector(increaseScore))
@@ -84,22 +69,20 @@ class ViewController: UIViewController {
         kenny8.addGestureRecognizer(recognizer8)
         kenny9.addGestureRecognizer(recognizer9)
         
-        kennyArray = [kenny1, kenny2, kenny3, kenny4, kenny5, kenny6, kenny7, kenny8, kenny9]
-        
+        updateKennyArray()
         
         //Timers
-        
-        counter = 10
         timeLabel.text = String(counter)
         
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countDown), userInfo: nil, repeats:true)
         hideTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(hideKenny), userInfo: nil, repeats: true)
-       
-        
+              
         hideKenny()
-        
-        
-        
+    }
+    
+    private func updateKennyArray() {
+        kennyArray.removeAll()
+        kennyArray = [kenny1, kenny2, kenny3, kenny4, kenny5, kenny6, kenny7, kenny8, kenny9]
     }
         
    @objc func hideKenny() {
@@ -134,7 +117,6 @@ class ViewController: UIViewController {
             
             for kenny in kennyArray {
                 kenny.isHidden = true
-                
             }
             
             //HighScore
@@ -144,10 +126,6 @@ class ViewController: UIViewController {
                 highScoreLabel.text = " HighScore:\(self.highScore)"
                 UserDefaults.standard.set(self.highScore, forKey: "highscore")
             }
-            
-            
-            
-            
             
           //Alert
             let alert = UIAlertController(title: "Time's Up", message: "Do you want to play again?", preferredStyle: UIAlertController.Style.alert)
